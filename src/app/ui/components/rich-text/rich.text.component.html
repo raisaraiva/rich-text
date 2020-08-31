@@ -1,0 +1,37 @@
+<div class="rich-text">
+  <div class="toolbar">
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('bold')"><img class="icon-image" src="assets/icons/bold.svg" alt="Bold"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('italic')"><img class="icon-image" src="assets/icons/italic.svg" alt="Italic"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('underline')"><img class="icon-image" src="assets/icons/underline.svg" alt="Underline"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('justifyLeft')"><img class="icon-image" src="assets/icons/align-left.svg" alt="Justify left"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('justifyCenter')"><img class="icon-image" src="assets/icons/align-center.svg" alt="Justify center"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('justifyRight')"><img class="icon-image" src="assets/icons/align-right.svg" alt="Justify right"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('insertOrderedList')"><img class="icon-image" src="assets/icons/list-ol.svg" alt="Insert ordered list"></button>
+    </div>
+
+    <div class="tool">
+      <button class="icon" type="button" (click)="execCommand('insertUnorderedList')"><img class="icon-image" src="assets/icons/list-ul.svg" alt="Insert unordered list"></button>
+    </div>
+  </div>
+
+  <div id="content" contenteditable="true" [innerHTML]="innerHTML"></div>
+</div>

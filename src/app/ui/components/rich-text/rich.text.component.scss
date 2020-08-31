@@ -1,0 +1,37 @@
+.rich-text {
+  border: 1px solid lightgray;
+}
+
+.rich-text #content {
+  height: 100%;
+  padding: 5px;
+  border-top: 1px solid lightgray;
+}
+
+@media only screen and (min-height: 200px) {
+  .rich-text #content {
+    height: 200px;
+  }
+}
+
+.rich-text .toolbar {
+  margin: 1px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.rich-text .toolbar .tool {
+  margin: 1px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.icon > .icon-image {
+  height: 24px;
+  display: block;
+  margin: 0 auto;
+}
